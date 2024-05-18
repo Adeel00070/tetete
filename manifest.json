@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Login ",
+  "version": "1.0",
+  "description": "Automatically fills login and password fields and clicks login button.",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
